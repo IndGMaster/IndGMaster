@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Rushy Road Run - Indie Game Master</title>
+	<meta name="title" content="Rushy Road Run - Indie Game Master" />
+	<meta name="description" content="Could be the best brand new style blocky style (Crossy Road like) mobile game in 2016." />
+	
+	<!-- <link rel="image_src" href="/images/notify_better_image.png" /> todo -->
+	<!-- <link rel="shortcut icon" id="favicon" href="favicon.png"> todo -->
+	<!-- 
+	<meta content="http://www.thepetedesign.com/demos/onepage_scroll_demo.html" property="og:url" />
+	<meta content="http://www.thepetedesign.com/images/onepage_scroll_image.png" property="og:image" />
+	 -->
+	 
+	<meta name="author" content="Magician Martin T., Indie Game Master">
+	<meta name="keywords" content="Rushy Road Run,RRR,Indie Game,Game Master,Indie Game Master,Crossy Road,Download,DL,2016,2017,App,iOS,Android,iPhone,iPad,mobile,blocky,Blocky Raider, Blocky Football, Blocky Runner,VR,Game,VR Crossy,Best Game 2017,Best Mobile Game 2017, Super Mario Run">
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="./jquery.onepage-scroll.min.js"></script>
+  
+	<link href="./onepage-scroll.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  
+	<script>
+	// ga //
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-88848647-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	
+	<style>
+    html {
+      height: 100%;
+    }
+		
+    body {
+			font-family: "Lilliput Steps", Helvetica, Arial, sans-serif;
+      background: #E2E4E7;
+      padding: 0;
+      text-align: center;
+      position: relative;
+      margin: 0;
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    .wrapper {
+    	height: 100% !important;
+    	height: 100%;
+    	margin: 0 auto; 
+    	overflow: hidden;
+    }
+    
+    a {
+      text-decoration: none;
+    }
+    
+    
+    h1, h2 {
+      width: 100%;
+      float: left;
+    }
+    h1 {
+      margin-top: 50px;
+      color: #000;
+      margin-bottom: 5px;
+      font-size: 70px;
+      letter-spacing: -4px;
+      font-weight: 100;
+    }
+    h1 span {
+      font-size: 26px;
+      margin: 0 5px;
+      text-transform: capitalize;
+      background: rgba(0,0,0,0.85);
+      display: inline-block;
+      color: #6D461D;
+      border-radius: 5px 5px;
+      -webkit-border-radius: 5px 5px;
+      -moz-border-radius: 5px 5px;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
+      padding: 3px 10px;
+    }
+    h2 {
+      color: #666;
+      font-weight: 100;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    
+    .main {
+      float: left;
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    .main h1 {
+      float: left;
+      width: 100%;
+      font-size: 45px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      font-weight: 100;
+      margin: 0;
+    }
+    
+		
+    .btn {
+      width: 200px;
+      color: rgb(255, 255, 255);
+      border: 4px solid rgb(0, 0, 0);
+      background: rgba(3, 3, 3, 0.75);
+    }
+    .clear {
+      width: auto;
+    }
+    .btn:hover, .btn:hover {
+      background: #444;
+    }
+    .btns {
+      max-width: 100%;
+      margin: 50px auto;
+    }
+		.btns img {
+			width: 100%;
+    	height: auto;
+	}
+	
+	body.disabled-onepage-scroll h1 {
+		font-size: 20pt;
+	}
+	
+	body.disabled-onepage-scroll h2 {
+		font-size: 16pt;
+	}
+	
+	body.disabled-onepage-scroll {
+		font-size: 12pt;
+	}
+	
+	body.disabled-onepage-scroll .page_container {
+    max-width: 340px;
+	}
+	
+	body.disabled-onepage-scroll .video {
+		width: 320px;
+		height: 180px;
+	}
+		
+		@font-face {
+		  font-family: "Lilliput Steps";
+		  src: url('lilliput steps.ttf');
+		}
+		
+		/* prepare the selectors to add a stroke to */
+.stroke-single,
+.stroke-double {
+	color: #fff;
+  position: relative;
+  background: transparent;
+  z-index: 0;
+}
+/* add a single stroke */
+.stroke-single:before,
+.stroke-double:before {
+  content: attr(title);
+  position: absolute;
+  -webkit-text-stroke: 0.2em #000; /* Chris Coyier's favorite color! */
+  left: 0;
+  z-index: -1;
+}
+/* add a double stroke */
+.stroke-double:after {
+  content: attr(title);
+  position: absolute;
+  -webkit-text-stroke: 0.4em #778B37;
+  left: 0;
+  z-index: -2;
+}
+		
+		h1 {
+			text-align: left;
+			color: #fff;
+			letter-spacing: 8px;
+		}
+		
+		img.screenshot {
+			height: 75%;
+			width: auto;
+		}
+		
+		.page1 img.icon {
+			height: 60%;
+			width: auto;
+		}
+		
+		.credit {
+			text-align: center;
+			color: rgba(0,0,0,0.5);
+			width: 400px;
+			clear: both;
+			margin: auto;
+		}
+		.credit a {
+			color: rgba(0,0,0,0.85);
+			text-decoration: none;
+			font-weight: bold;
+			text-align: center;
+		}
+		
+		section {
+			text-align: center;
+		}
+		
+		.page_container {
+			padding-top: 16px;
+			display: inline-block;
+			height: 100%;
+			max-width: 640px;
+		}
+		
+		
+		.page1 {
+			background:rgb(99, 194, 222);
+		}
+		
+		.page2 {
+			background:rgb(246, 197, 85);
+		}
+		
+		.page3 {
+			background:rgb(226, 148, 59);
+		}
+		
+		.page4 {
+			background:rgb(66, 154, 66);
+		}
+		
+		.page5 {
+			background:rgb(99, 194, 222);
+		}
+		
+		.page6 {
+			background:rgb(226, 33, 33);
+		}
+		
+		.page7 {
+			background:rgb(246, 197, 85);
+		}
+		
+		.page8 {
+			background:rgb(226, 148, 59);
+		}
+		
+		
+	</style>
+	<script>
+	  $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: true
+      });
+			
+			var h1s = $("h1");
+			h1s.each((i, e) => {
+				e.setAttribute("title", e.innerText);
+				$(e).addClass('stroke-single');
+			});
+		});
+		
+	</script>
+</head>
+<body>
+  <div class="wrapper">
+	  <div class="main">
+      <section class="page1">
+        <div class="page_container">
+          <h1>Rushy Road Run</h1>
+          <h2>Could be the best brand new style blocky style <small>(Crossy Road like)</small> mobile game in 2017.</h2>
+          <img class="icon" src="./img/icon_1.png"></img>
+					<p class="credit">Created by Magician <a>Martin</a>, Founder of <a href="http://indgmaster.github.io" target="_blank">Indie Game Master</a></p>
+  	    </div>
+      </section>
+	    
+	    <section class="page2">
+	      <div class="page_container">
+          <h1>Lobby</h1>
+          <h2>See all the features here!</h2>
+          <img class="screenshot" src="./screenshot/screenshot_00_lobby.png"></img>
+	      </div>
+      </section>
+			
+			<section class="page3">
+				<div class="page_container">
+					<h1>Mini Game</h1>
+					<h2>Get as much free coin as you can!</h2>
+					<img class="screenshot" src="./screenshot/screenshot_01_mini_game.png"></img>
+				</div>
+			</section>
+			
+			<section class="page4">
+				<div class="page_container">
+					<h1>Prize</h1>
+					<h2>Pray to god and see: It is happening!</h2>
+					<img class="screenshot" src="./screenshot/screenshot_02_pray2god.png"></img>
+				</div>
+			</section>
+			
+			<section class="page5">
+				<div class="page_container">
+					<h1>Character</h1>
+					<h2>Select you own character to play! <small>(and see the differences)</small></h2>
+					<img class="screenshot" src="./screenshot/screenshot_03_character.png"></img>
+				</div>
+			</section>
+			
+			<section class="page6">
+				<div class="page_container">
+					<h1>Unlock Your Characters!</h1>
+					<h2>Unlock all the hidden characters!</h2>
+					<img class="screenshot" src="./screenshot/screenshot_06_hidden_character.png"></img>
+				</div>
+			</section>
+			
+			<section class="page7">
+				<div class="page_container">
+					<h1>Game</h1>
+					<h2>Evade the cars coming! Don't get hit and try to run as far as you can! <small>(remember to collect the coin)</small></h2>
+					<img class="screenshot" src="./screenshot/screenshot_07_game.png"></img>
+				</div>
+			</section>
+			
+			<section class="page8">
+				<div class="page_container">
+					<h1>Game Play Video</h1>
+					<h2>Still don't know what do I mean? Click and see the following video!</h2>
+					<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Y5jlS_qEIEM" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</section>
+			
+			<section class="page9">
+				<div class="page_container">
+					<h1>Download Now!</h1>
+					<h2>And don't forget to share it to your friends! :)</h2>
+					<div class="btns">
+						<a href="https://play.google.com/store/apps/details?id=com.igmaster.rushyroadrun" target="_blank"><img src="./android-app-icon.png"></img></a>
+						<p><small>IOS version is not yet ready. Please feel free to contact us if you really cannot wait.</small></p>
+						<!-- <a href="https://github.com/peachananr/onepage-scroll" target="_blank"><img src="./apple-app-store-icon.png"></img></a> -->
+					</div>
+				</div>
+			</section>
+			
+    </div>
+  </div>
+</body>
+</html>
